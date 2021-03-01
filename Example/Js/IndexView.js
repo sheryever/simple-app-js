@@ -1,10 +1,9 @@
 class IndexView extends View {
     name = "IndexView";
 
-    constructor (dt, ui){
+    constructor (dt){
         super();
         this.dt = dt;
-        this.userInfo = ui;
     }
 
     init(){
@@ -15,8 +14,7 @@ class IndexView extends View {
     load() {
         console.log('Loading IndexView');
         console.log(this.dt.name);
-        console.log(this.userInfo.name)
     }
 }
 
-app.view(['DateTime', 'UserInfo'], IndexView);
+app.view(['DateTime'], IndexView);
