@@ -306,21 +306,31 @@
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-        <!-- components -->
-        <script src="app-mvc-client/Component.js"></script>
-
         <!-- View  -->
-        <script src="app-mvc-client/View.js"></script>
-
+        <script src="app-mvc-client/app.view.js"></script>
 
         <!-- components -->
-        <script src="app-mvc-client/App.js"></script>
+        <script src="app-mvc-client/app.component.js"></script>
+
+        <!-- components -->
+        <script src="app-mvc-client/app.js"></script>
+
+        <script src="app-mvc-client/app.common.js"></script>
+
+        <script src="app-mvc-client/app.common.util.js"></script>
+        <script src="app-mvc-client/app.common.html.js"></script>
+        <script src="app-mvc-client/app.common.userInterface.js"></script>
+
+        <script src="js/mvc-url.js"></script>
+
+        <script src="js/CustomAppConfig.js"></script>
+
 
         <script src="js/IndexView.js"></script>
         <script src="js/UserInfoComponent.js"></script>
 
         <script>
-            app.init("/", {controller: 'home', action: "index" } );
+            app.start(new CustomAppConfig("/", {controller: 'home', action: "index" }) );
         </script>
 
     </body>

@@ -158,4 +158,5 @@ class Util {
     }
 
 };
-var util = new Util();
+
+app.dependencyService.registerType('Util', Util);

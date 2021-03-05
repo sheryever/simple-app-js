@@ -1,6 +1,6 @@
 class View {
-    validationAttributes = {};
-    components = [];
+    validationAttributes = {}
+    components = []
 
     initComponents () {
 
@@ -32,19 +32,19 @@ class View {
         }
     }
 
-    componentsKoBind () {
+    // componentsKoBind () {
 
-        for (var i = 0; i < this.components.length; i++) {
-            try {
-                this.components[i].koBind();
-            } catch (error) {
-                throw new Error("Error in " + this.components[i].typeName + ".koBind() function. \n" + error.stack);
-            }
-        }
+    //     for (var i = 0; i < this.components.length; i++) {
+    //         try {
+    //             this.components[i].koBind();
+    //         } catch (error) {
+    //             throw new Error("Error in " + this.components[i].typeName + ".koBind() function. \n" + error.stack);
+    //         }
+    //     }
 
-    }
+    // }
 
-    koBind () { }
+    // koBind () { }
 
     initChildComponentsUi () {
         for (var i = 0; i < this.components.length; i++) {
@@ -85,5 +85,4 @@ class View {
     reset () {
         this.resetComponents();
     } 
-
 }

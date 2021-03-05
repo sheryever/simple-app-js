@@ -119,4 +119,4 @@ class Html {
     };
 };
 
-var html = new Html();
+app.dependencyService.registerType('Html', Html);

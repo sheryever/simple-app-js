@@ -1,10 +1,7 @@
 class UserInterface {
     
-    resources = [];
+    resources = []
 
-    constructor(){
-        this.resources = __resources !== undefined ? __resources : [];
-    }
 
     init() {
         if ($.datepicker) {
@@ -91,6 +88,6 @@ class UserInterface {
                 //$dialog.find('.ui-dialog-titlebar-close').text('x');
             });
     };
-};
+}
 
-ui = new UserInterface();
+app.dependencyService.registerType('UI', UserInterface);
