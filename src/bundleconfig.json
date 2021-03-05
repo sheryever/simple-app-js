@@ -1,0 +1,17 @@
+[
+  {
+    "outputFileName": "app-mvc-client/app.all.js",
+    "inputFiles": [
+      "app-mvc-client/app.view.js",
+      "app-mvc-client/app.component.js",
+      "app-mvc-client/app.js",
+      "app-mvc-client/app.common.js",
+      "app-mvc-client/app.common.util.js",
+      "app-mvc-client/app.common.html.js",
+      "app-mvc-client/app.common.userInterface.js",
+      "app-mvc-client/mvc-url.js",
+      "js/amanah.ewm.appConfig.js"
+    ]
+  }
+]
+ 

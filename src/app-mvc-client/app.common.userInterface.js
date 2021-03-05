@@ -63,27 +63,34 @@ class UserInterface {
 
                 if ($actionButton.length > 0) {
                     $actionButton
-                        .addClass('btn btn-primary')
+                        .addClass('btn btn-primary btn-sm')
+                        .removeClass('ui-button')
                         .prev()
-                        .addClass('btn btn-warning cancel');
+                        .addClass('btn btn-warning btn-sm cancel')
+                        .removeClass('ui-button');
                 }
 
                 $actionButton = $dialog.find("#AddRecordDialogSaveButton");
 
                 if ($actionButton.length > 0) {
                     $actionButton
-                        .addClass('btn btn-primary')
+                        .addClass('btn btn-primary btn-sm')
+                        .removeClass('ui-button')
                         .prev()
-                        .addClass('btn btn-warning cancel');
+                        .addClass('btn btn-warning btn-sm cancel')
+                        .removeClass('ui-button');
                 }
 
                 $actionButton = $dialog.find("#DeleteDialogButton");
 
                 if ($actionButton.length > 0) {
                     $actionButton
-                        .addClass('btn btn-danger')
+                        .addClass('btn btn-danger btn-sm')
+                        .removeClass('ui-button')
                         .prev()
-                        .addClass('btn btn-warning cancel');
+                        .addClass('btn btn-warning btn-sm cancel')
+                        .removeClass('ui-button');
+
                 }
                 //$dialog.find('.ui-dialog-titlebar-close').text('x');
             });

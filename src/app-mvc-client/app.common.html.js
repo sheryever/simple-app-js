@@ -1,6 +1,10 @@
 class Html {
 
-    attachAntiForgeryToken(obj) {
+    constructor(ui) {
+        this.ui = ui;
+    }
+
+    attachAntigeryToken(obj) {
         var token = $('[name="__RequestVerificationToken"]').val();
 
         if (!token) {
@@ -14,7 +18,7 @@ class Html {
 
     jtableCreatedByFullNameColumn() {
         return {
-            title: ui.getResource('CreatedByFullName'),
+            title: this.ui.getResource('CreatedByFullName'),
             width: '10%',
             visibility: 'hidden',
             sorting: true,
@@ -25,7 +29,7 @@ class Html {
 
     jtableModifiedByFullNameColumn() {
         return {
-            title: ui.getResource('ModifiedByFullName'),
+            title: this.ui.getResource('ModifiedByFullName'),
             width: '10%',
             visibility: 'hidden',
             sorting: true,
@@ -36,7 +40,7 @@ class Html {
 
     jtableCreatedOnColumn() {
         return {
-            title: ui.getResource('CreatedOnColumn'),
+            title: this.ui.getResource('CreatedOnColumn'),
             width: '10%',
             sorting: true,
             create: false,
@@ -54,7 +58,7 @@ class Html {
 
     jtableDateColumn(options) {
         return {
-            title: ui.getResource(options.title),
+            title: this.ui.getResource(options.title),
             width: '10%',
             sorting: true,
             create: false,
@@ -71,7 +75,7 @@ class Html {
 
     jtableModifiedOnColumn() {
         return {
-            title: ui.getResource('ModifiedOnColumn'),
+            title: this.ui.getResource('ModifiedOnColumn'),
             width: '10%',
             sorting: true,
             create: false,
@@ -90,7 +94,7 @@ class Html {
 
     jtableEditColumn(options) {
         return {
-            title: ui.getResource(''),
+            title: this.ui.getResource(''),
             visibility: 'fixed',
             width: '0.2%',
             sorting: false,
@@ -119,4 +123,4 @@ class Html {
     };
 };
 
-app.dependencyService.registerType('Html', Html);
+app.dependencyService.registerType('Html', ['UI'], Html);

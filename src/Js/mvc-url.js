@@ -207,16 +207,6 @@ var MvcUrlHelper = function (rootUrl, mvcRouteData) {
     });
 
 
-    /*
-    this.mvcJtablePostAction = function (action) {
-        
-        return this.mvcJtablePostAction(action, this.defaultMvcRoute);
-    };
-
-    util.addOverloadMethod(this, 'mvcJtablePostAction', function (action, routeData) {
-        return "POST@" + this.action(action, routeData);
-    });
-    */
     //#endregion Mvc Actions
 
     //#endregion
